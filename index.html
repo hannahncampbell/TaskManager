@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <button id="add-task-button">Add Task</button>
+    <a href="#" onclick="showTasks('today')">Today</a>
+    <a href="#" onclick="showTasks('upcoming')">Upcoming</a>
+    <a href="#" onclick="showTasks('completed')">Completed</a>
+  </div>
+
+  <div class="task-list" id="taskList">
+  </div>
+
+  <div id="add-task-form" class="input-form">
+    <div class="form-content">
+      <span class="close-button">&times;</span>
+      <h2>Add Task</h2>
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Task" required><br>
+        <input type="date" id="dueDate"><br>
+        <input type="time" id="dueTime"><br>
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
